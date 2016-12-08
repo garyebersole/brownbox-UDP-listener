@@ -1,0 +1,24 @@
+{
+  "name": "UDPListener",
+  "version": "v0.0.5",
+  "description": "Listen for UDP messages from Brown Box components",
+  "main": "UPDListener.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gary Ebersole",
+  "license": "UNLICENSED",
+  "bin": {
+    "UDPListener": "./UDPListener.js"
+  },
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/garyebersole/brownbox-UDP-listener.git"
+  },
+  "dependencies": {
+    "co": "^4.6.0",
+    "commander": "^2.9.0",
+    "fs": "^0.0.1-security",
+    "superagent": "^3.1.0"
+  }
+}
