@@ -4,18 +4,28 @@
  *      TOOL:
  *          UDPListener
  *
- *      ENV:
+ *      USAGE:
+ *          node UDPListener.js ipAddress portNumber
+ *          node UDPListener.js 10.0.0.30 41234
+ *
+ *      ENVIRONMENT:
  *          None
  *
- *      12/7/2016   First code
+ *      UPDATES:
+ *          12/7/2016   First code
+ *
+ *      REFERENCES:
+ *          https://nodejs.org/api/dgram.html#dgram_socket_bind_port_address_callback
  *
  */
 const dgram = require('dgram');
 const server = dgram.createSocket('udp4');
 
-const request = require('superagent');
+/*
+    Use 'commander' to extract arguments form the command line
+ */
 const program = require('commander');
-const fs = require("fs");
+
 
 /*
     Get the host IP address and port number from the command line
