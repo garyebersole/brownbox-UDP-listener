@@ -2,15 +2,15 @@
 
 ## NPM Packages
 
->npm install commander
+>$ npm install commander
 
 ## Usage
 
->node UDPListener.js *listener IP address listener port*
+>$ node UDPListener.js *listener_IP_address listener_port*
 
 ## Example
 
->node UDPListener.js 172.24.1.1 41234
+>$ node UDPListener.js 172.24.1.1 41234
 
 
 
